@@ -1,6 +1,9 @@
 package RGMCode;
 
 import RGMCode.model.Student;
+import RGMCode.model.StudentDB;
+
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -66,7 +69,8 @@ public class Main {
         System.out.println(studentAndreas.equals(studentAndreas2));
         */
 
-
+//        getAllStudents();
+        randomStudent();
     }
 
     public static boolean aufgabeBool(boolean boolTrue){
@@ -85,6 +89,33 @@ public class Main {
         }
     }
 
+    public static void arrStudent(){
+        StudentDB[] studDB = new StudentDB[3];
+        studDB[0] = new StudentDB(1,"René");
+        studDB[1] = new StudentDB(2,"Max");
+        studDB[2] = new StudentDB(3,"Harald");
+    }
 
+    public static StudentDB[] getAllStudents(){
+        StudentDB[] studDB = new StudentDB[6];
+        studDB[0] = new StudentDB(1,"René");
+        studDB[1] = new StudentDB(2,"Sunny");
+        studDB[2] = new StudentDB(3,"Harald");
+        studDB[3] = new StudentDB(4,"Max");
+        studDB[4] = new StudentDB(5,"Johannes");
+
+        for (int i = 0; i <= 4; i++){
+            System.out.println(studDB[i]);
+        }
+        return studDB;
+    }
+
+    public static void randomStudent(){
+        StudentDB[] studDB = getAllStudents();
+        Random rnd = new Random();
+        int rndNum = rnd.nextInt(5);
+//        System.out.println(rndNum);
+        System.out.println(studDB[rndNum]);
+    }
 
 }
