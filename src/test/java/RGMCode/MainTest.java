@@ -11,10 +11,9 @@ class MainTest {
         //given
         boolean boolTrue = true;
         //when
-        boolean act = Main.aufgabeBool(boolTrue);
+        boolean actual = Main.aufgabeBool(boolTrue);
         //then
-        assertTrue(boolTrue);
-
+        assertTrue(actual);
     }
 
 }

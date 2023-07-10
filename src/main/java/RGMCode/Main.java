@@ -65,6 +65,8 @@ public class Main {
         System.out.println(studentAndreas2.hashCode());
         System.out.println(studentAndreas.equals(studentAndreas2));
         */
+
+
     }
 
     public static boolean aufgabeBool(boolean boolTrue){
@@ -82,5 +84,7 @@ public class Main {
             return false;
         }
     }
+
+
 
 }
