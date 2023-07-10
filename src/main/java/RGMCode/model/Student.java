@@ -1,5 +1,7 @@
 package RGMCode.model;
 
+import java.util.Objects;
+
 public class Student {
     protected int studentID;
     protected String lastName;
@@ -49,5 +51,19 @@ public class Student {
                 ", lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return studentID == student.studentID && Objects.equals(lastName, student.lastName) && Objects.equals(firstName, student.firstName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(studentID, lastName, firstName);
     }
 }

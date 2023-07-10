@@ -37,27 +37,50 @@ public class Main {
         System.out.println(studentAndreas.getFirstName());
         */
 
-        Student studentJemandAnderes = new Student(1927, "Steinmeier", "Magret");
+/*        Student studentJemandAnderes = new Student(1927, "Steinmeier", "Magret");
         System.out.println(studentJemandAnderes.getStudentID() + " " + studentJemandAnderes.getLastName() + " " +  studentJemandAnderes.getFirstName());
-        System.out.println(studentJemandAnderes.toString());
+        System.out.println(studentJemandAnderes);
 
 
         Student studentRene = new Student(1234, "Mengedoth", "René");
         System.out.println(studentRene.getStudentID() + " " + studentRene.getLastName() + " " +  studentRene.getFirstName());
-        System.out.println(studentRene.toString());
+        System.out.println(studentRene);
 
 
         Student studentClenn = new Student(2345, "Acrivopoulos", "Clenn");
         System.out.println(studentClenn.getStudentID() + " " + studentClenn.getLastName() + " " +  studentClenn.getFirstName());
-        System.out.println(studentClenn.toString());
+        System.out.println(studentClenn);*/
 
 
         Student studentAndreas = new Student(3456, "Blank", "Andreas");
-        System.out.println(studentAndreas.getStudentID() + " " + studentAndreas.getLastName() + " " +  studentAndreas.getFirstName());
-        System.out.println(studentAndreas.toString());
+       /* System.out.println(studentAndreas.getStudentID() + " " + studentAndreas.getLastName() + " " +  studentAndreas.getFirstName());
+        System.out.println(studentAndreas);
+*/
+        Student studentAndreas2 = new Student(3456, "Blank", "Andreas");
+   /*     System.out.println(studentAndreas2.getStudentID() + " " + studentAndreas2.getLastName() + " " +  studentAndreas2.getFirstName());
+        System.out.println(studentAndreas2);*/
 
 
+/*        System.out.println(studentAndreas.hashCode());
+        System.out.println(studentAndreas2.hashCode());
+        System.out.println(studentAndreas.equals(studentAndreas2));
+        */
     }
 
+    public static boolean aufgabeBool(boolean boolTrue){
+        Student studentAndreas = new Student(3456, "Blank", "Andreas");
+        System.out.println(studentAndreas.hashCode());
+
+        Student studentAndreas2 = new Student(3456, "Blank", "Andreas");
+        System.out.println(studentAndreas2.hashCode());
+
+        //System.out.println(studentAndreas.equals(studentAndreas2));
+
+        if (studentAndreas.equals(studentAndreas2)){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
