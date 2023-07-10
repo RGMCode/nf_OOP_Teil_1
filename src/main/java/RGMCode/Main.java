@@ -11,7 +11,7 @@ public class Main {
         System.out.println(student.lastName);
         System.out.println(student.firstName);
 
-        System.out.println("------------------------");
+        System.out.println("-------------");
 
         student.studentID = 2345;
         student.lastName = "Acrivopoulos";
@@ -20,7 +20,7 @@ public class Main {
         System.out.println(student.lastName);
         System.out.println(student.firstName);
 
-        System.out.println("------------------------");
+        System.out.println("-------------");
 
         student.studentID = 3456;
         student.lastName = "Blank";
